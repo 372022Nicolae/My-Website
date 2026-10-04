@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f3f1e8;
+  color: #292929;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  color: #1d4ed8;
+}
+
+
+.site-header {
+  background-color: #fffdf7;
+  border-bottom: 1px solid #c9c3b5;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: #666666;
+}
+
+.site-nav a[aria-current="page"] {
+  color: #315b9a;
+  font-weight: bold;
+}
+
+.page-grid {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.content-card {
+  background-color: #fffdf7;
+  padding: 1.5rem;
+  border: 1px solid #c9c3b5;
+  border-radius: 4px;
+}
+
+.project-hero-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 4px;
+  background-color: #0f172a;
+  padding: 16px;
+  border: 1px solid #c9c3b5;
+  margin-bottom: 1rem;
+}
+
+.project-info h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.project-info ul {
+  padding-left: 1.2rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  background-color: #fffdf7;
+  color: #292929;
+  border: 1px solid #c9c3b5;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.btn:hover {
+  background-color: #f3f1e8;
+}
+
+a, button {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: #315b9a;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background-color: #f3f1e8;
+  outline: 2px solid #315b9a;
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .site-nav {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+
+  .content-card {
+    padding: 1.25rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+footer.site-footer {
+  background-color: #fffdf7;
+  border-top: 1px solid #c9c3b5;
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}

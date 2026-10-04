@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#315b9a" />
+      <stop offset="100%" stop-color="#1f3a64" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)" />
+
+  <!-- Grid lines / Decorative Pattern -->
+  <path d="M0 50 H800 M0 100 H800 M0 150 H800 M0 200 H800 M0 250 H800 M0 300 H800 M0 350 H800 M0 400 H800" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  
+  <!-- Terminal / App Container -->
+  <g filter="url(#shadow)" transform="translate(100, 45)">
+    <!-- Main Window Background -->
+    <rect width="600" height="360" rx="10" fill="#fffdf7" stroke="#c9c3b5" stroke-width="2"/>
+    
+    <!-- Window Header -->
+    <rect width="600" height="40" rx="10" fill="#f3f1e8"/>
+    <rect y="30" width="600" height="10" fill="#f3f1e8"/>
+    <line x1="0" y1="40" x2="600" y2="40" stroke="#c9c3b5" stroke-width="1"/>
+    
+    <!-- Window Controls (Red, Yellow, Green Dots) -->
+    <circle cx="25" cy="20" r="6" fill="#ff5f56"/>
+    <circle cx="45" cy="20" r="6" fill="#ffbd2e"/>
+    <circle cx="65" cy="20" r="6" fill="#27c93f"/>
+    
+    <!-- App Title in Window -->
+    <text x="300" y="25" fill="#666666" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Java Contact Manager v1.0</text>
+    
+    <!-- Sidebar / Navigation panel inside window -->
+    <rect x="0" y="40" width="160" height="320" fill="#eae6d9" />
+    <line x1="160" y1="40" x2="160" y2="360" stroke="#c9c3b5" stroke-width="1"/>
+    
+    <!-- Sidebar Options -->
+    <rect x="12" y="60" width="136" height="28" rx="5" fill="#315b9a"/>
+    <text x="25" y="78" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="600">📋 All Contacts</text>
+    <text x="25" y="118" fill="#666666" font-family="system-ui, sans-serif" font-size="12" font-weight="500">➕ Add Contact</text>
+    <text x="25" y="153" fill="#666666" font-family="system-ui, sans-serif" font-size="12" font-weight="500">🔍 Search</text>
+    <text x="25" y="188" fill="#666666" font-family="system-ui, sans-serif" font-size="12" font-weight="500">📁 Export File</text>
+
+    <!-- Main Content Area -->
+    <!-- Search Bar -->
+    <rect x="180" y="60" width="400" height="32" rx="6" fill="#ffffff" stroke="#c9c3b5" stroke-width="1"/>
+    <text x="195" y="81" fill="#888888" font-family="system-ui, sans-serif" font-size="12">Search contacts...</text>
+
+    <!-- Contact List Item 1 -->
+    <g transform="translate(180, 105)">
+      <rect width="400" height="50" rx="6" fill="#ffffff" stroke="#c9c3b5" stroke-width="1"/>
+      <circle cx="28" cy="25" r="15" fill="#315b9a"/>
+      <text x="28" y="30" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">MN</text>
+      <text x="55" y="22" fill="#292929" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">Morui Nicolae</text>
+      <text x="55" y="37" fill="#666666" font-family="system-ui, sans-serif" font-size="11">moruinicolae1@gmail.com</text>
+      <text x="380" y="30" fill="#315b9a" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="end">+373 60608681</text>
+    </g>
+
+    <!-- Contact List Item 2 -->
+    <g transform="translate(180, 165)">
+      <rect width="400" height="50" rx="6" fill="#ffffff" stroke="#c9c3b5" stroke-width="1"/>
+      <circle cx="28" cy="25" r="15" fill="#e07a5f"/>
+      <text x="28" y="30" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">JD</text>
+      <text x="55" y="22" fill="#292929" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">Jane Doe</text>
+      <text x="55" y="37" fill="#666666" font-family="system-ui, sans-serif" font-size="11">jane.doe@example.com</text>
+      <text x="380" y="30" fill="#666666" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="end">+373 69123456</text>
+    </g>
+
+    <!-- Contact List Item 3 -->
+    <g transform="translate(180, 225)">
+      <rect width="400" height="50" rx="6" fill="#ffffff" stroke="#c9c3b5" stroke-width="1"/>
+      <circle cx="28" cy="25" r="15" fill="#2a9d8f"/>
+      <text x="28" y="30" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">YS</text>
+      <text x="55" y="22" fill="#292929" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">YSA Moldova</text>
+      <text x="55" y="37" fill="#666666" font-family="system-ui, sans-serif" font-size="11">contact@ysa.md</text>
+      <text x="380" y="30" fill="#666666" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="end">+373 22001122</text>
+    </g>
+
+    <!-- Console Output Badge at bottom -->
+    <rect x="180" y="290" width="400" height="50" rx="6" fill="#292929"/>
+    <text x="195" y="310" fill="#27c93f" font-family="monospace" font-size="11">> Java Console Terminal Output:</text>
+    <text x="195" y="328" fill="#f3f1e8" font-family="monospace" font-size="11">[SUCCESS] Loaded 3 contacts from database.txt</text>
+  </g>
+</svg>
