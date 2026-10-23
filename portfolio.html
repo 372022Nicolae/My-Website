@@ -1,83 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="portfolio.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Nicolae Morui</title>
+  <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
-
   <header class="site-header">
-  <a href="portfolio.html" class="logo-title">Portfolio</a>
-  <nav class="site-nav">
-    <a href="index.html">About me</a>
-    <a href="CV.html">CV</a>
-  </nav>
-</header>
+    <a href="index.html" class="site-title">Nicolae Morui</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">About me</a>
+      <a href="cv.html">CV</a>
+      <a href="portfolio.html" aria-current="page">Portfolio</a>
+    </nav>
+  </header>
 
   <main class="container">
+    <div class="card">
+      <h1>My Projects</h1>
+      <p>A showcase of applications and web development work I have built.</p>
+    </div>
 
-    <section class="card">
-      <h2>My Projects</h2>
-      <p>A selection of practical software and web projects built using Java, HTML, and CSS.</p>
-    </section>
+    <div class="portfolio-grid">
+      <article class="project-card">
+        <img src="images/student-manager.svg" alt="Student Information Manager Interface">
+        <div class="project-info">
+          <h3>Student Info Manager</h3>
+          <p>An application to manage student records, courses, and academic data effectively.</p>
+          <div class="tech-tags">
+            <span class="tag">Java</span>
+            <span class="tag">JavaFX</span>
+          </div>
+          <a href="projects/student-manager.html" class="btn">View Details</a>
+        </div>
+      </article>
 
-    <article class="card project-card">
-      <img src="contact-manager.svg" alt="Contact Manager" class="project-img">
-      <div class="project-details">
-        <h2>Contact Manager</h2>
-        <p>A Java command-line application to store, search, edit, and delete personal contacts with input validation and simple file storage.</p>
-        <p><strong>Technologies:</strong> Java (Collections, File I/O)</p>
-        <a href="contact-manager.html" class="btn">View Details &rarr;</a>
-      </div>
-    </article>
+      <article class="project-card">
+        <img src="images/bank-app.svg" alt="Banking System Interface">
+        <div class="project-info">
+          <h3>Bank Management System</h3>
+          <p>A secure banking management desktop program to handle account transfers and transactions.</p>
+          <div class="tech-tags">
+            <span class="tag">Java</span>
+            <span class="tag">OOP</span>
+          </div>
+          <a href="projects/bank-app.html" class="btn">View Details</a>
+        </div>
+      </article>
 
-    <article class="card project-card">
-      <img src="bank-app.svg.svg" alt="Student Info Manager" class="project-img">
-      <div class="project-details">
-        <h2>Student Info Manager</h2>
-        <p>A Java command-line application that allows users to add, update, search, and delete student records using Object-Oriented Programming (OOP) principles.</p>
-        <p><strong>Technologies:</strong> Java (Core OOP, Collections)</p>
-        <a href="student-manager.html" class="btn">View Details &rarr;</a>
-      </div>
-    </article>
+      <article class="project-card">
+        <img src="images/quiz-engine.svg" alt="Quiz Engine Interface">
+        <div class="project-info">
+          <h3>Quantum Quiz Engine</h3>
+          <p>An interactive educational quiz system designed to test physics concepts.</p>
+          <div class="tech-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JS</span>
+          </div>
+          <a href="projects/quiz-engine.html" class="btn">View Details</a>
+        </div>
+      </article>
 
-    <article class="card project-card">
-      <img src="student-manager.svg.svg" alt="Simple Bank Management System" class="project-img">
-      <div class="project-details">
-        <h2>Simple Bank Management System</h2>
-        <p>A Java application that simulates standard banking operations like creating accounts, depositing/withdrawing funds, and tracking transaction history.</p>
-        <p><strong>Technologies:</strong> Java (OOP, Control Logic)</p>
-        <a href="bank-app.html" class="btn">View Details &rarr;</a>
-      </div>
-    </article>
+      <article class="project-card">
+        <img src="images/contact-manager.svg" alt="Contact Manager Interface">
+        <div class="project-info">
+          <h3>Contact Manager</h3>
+          <p>A web utility for organizing personal and professional contact details cleanly.</p>
+          <div class="tech-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">CSS Grid</span>
+          </div>
+          <a href="projects/contact-manager.html" class="btn">View Details</a>
+        </div>
+      </article>
 
-    <article class="card project-card">
-      <img src="text-adventure.svg.svg" alt="Quest Text-Based RPG Game" class="project-img">
-      <div class="project-details">
-        <h2>Quest - Text-Based RPG Game</h2>
-        <p>A Java command-line adventure game featuring turn-based combat, player health management, inventory tracking, and randomized enemy encounters.</p>
-        <p><strong>Technologies:</strong> Java (OOP, Control Logic, Randomization)</p>
-        <a href="text-adventure.html" class="btn">View Details &rarr;</a>
-      </div>
-    </article>
-
-    <article class="card project-card">
-      <img src="quiz-engine.svg.svg" alt="Java Knowledge Quiz Engine" class="project-img">
-      <div class="project-details">
-        <h2>Java Knowledge Quiz Engine</h2>
-        <p>A Java-based quiz tool that reads questions from a file, prompts the user in the console, evaluates answers, and calculates a final score.</p>
-        <p><strong>Technologies:</strong> Java (File I/O, Methods, Loops)</p>
-        <a href="quiz-engine.html" class="btn">View Details &rarr;</a>
-      </div>
-    </article>
-
+      <article class="project-card">
+        <img src="images/text-adventure.svg" alt="Text Adventure Game Interface">
+        <div class="project-info">
+          <h3>Text Adventure Game</h3>
+          <p>An interactive text-based adventure game built around narrative decisions and player state.</p>
+          <div class="tech-tags">
+            <span class="tag">Java</span>
+            <span class="tag">Logic</span>
+          </div>
+          <a href="projects/text-adventure.html" class="btn">View Details</a>
+        </div>
+      </article>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <p>2026 Morui Nicolae</p>
+    <p>&copy; Nicolae Morui. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
